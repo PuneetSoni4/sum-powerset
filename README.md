@@ -5,13 +5,21 @@ Power Set
 ---------
 
 If S is the set {a, b, c}, then the subsets of S are
-{} (the emptb set or the null set)
+
+{} (the empty set or the null set)
+
 {a}
+
 {b}
+
 {c}
+
 {a, b}
+
 {a, c}
+
 {b, c}
+
 {a, b, c}
 
 and hence the power set of S is {{}, {a}, {b}, {c}, {a, b}, {a, c}, {b, c}, {a, b, c}}.
