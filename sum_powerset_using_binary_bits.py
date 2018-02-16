@@ -10,8 +10,6 @@ class SUMPOWERSET(object):
 
         # params
         combinations_list = []
-        counter = 0
-        element_counter = 0
         length_of_data_list = len(data_list)
 
         # powerset size
