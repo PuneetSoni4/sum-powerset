@@ -23,6 +23,8 @@ If S is the set {a, b, c}, then the subsets of S are
 
 and hence the power set of S is {{}, {a}, {b}, {c}, {a, b}, {a, c}, {b, c}, {a, b, c}}.
 
+Therefore, if S has n elements in it then, P(s) will have 2^n elements.
+
 About the project
 -----------------
 
@@ -30,13 +32,13 @@ The main goal behind this project is to "get the sum of all elements of power-se
 
 I have provided different solutions to this problem which are as follows:
 
-1. Using "itertools.combinations" library:
+**1. Using "itertools.combinations" library:**
 
   Using this library, the program generates all possible set combinations of given data to create it's power-set. After getting all elements of power-set, program simply sums all elements.
   
-2. Using "binary bits":
+**2. Using "binary bits":**
   
-  This is implemented by considering each element of data as binary bit and then, program does left shift to generate different binary combinations. These combinations are then used to generate power-set.
+  First of all the size of powerset is calculated with formula "2^n", where n = number of elements in S. After that, a counter loop is ran till the size of powerset with internal loop, looping over size of set. if internal loop's bit in the outer counter is set, then program captures that element from data list.
   
   Example: If S={"a","b","c"} then possible binary combinations for 3 strings will be 2^3 = 8, which are as follows:
 
@@ -56,17 +58,19 @@ I have provided different solutions to this problem which are as follows:
 
           {111} -> {abc}
 
-  Finally, when power-set is found, simply summing all elements of power-set.
+  Finally, when power-set is found, the program sums all elements of power-set.
   
-3. Using "Python Generators":
+**3. Using "Python Generators":**
   
-  A recursive python generator is created to generate power-set combinations.
+  A python generator is created to generate power-set combinations.
 
-4. Using "Logic":
+**4. Using "Recursion":**
 
-  I am trying to create my own logic to generate power-set elements of given data. So far, I am able to compute power-set sum, if the length of data string is lesser than or equal to four (4). 
-  
-  Currenctly I am working on modifying and enhancing this logic using recursion to generate power-set for any data length.
+  A simple recursion method helps to generate power-set combinations.
+
+**5. Using "Logic":**
+
+  I tried creating my own logic to generate sum of power-set elements of given data. I was able to compute power-set sum, if the length of data string is lesser than or equal to four (4). 
 
 How to run python test script file?
 -----------------------------------
