@@ -3,7 +3,9 @@ import pytest
 import sum_powerset_using_combination as sum_powerset_py_file
 #import sum_powerset_using_generator as sum_powerset_py_file
 #import sum_powerset_using_binary_bits as sum_powerset_py_file
+#import sum_powerset_using_recursion as sum_powerset_py_file
 #import sum_powerset_using_logic as sum_powerset_py_file
+
 
 # using python pytest fixture to create and destroy class object with function scope
 @pytest.yield_fixture(scope="function", autouse=True)
